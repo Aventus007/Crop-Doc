@@ -16,7 +16,7 @@
     <nav class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="https://economictimes.indiatimes.com/news/economy/agriculture?from=mdr" target="_blank">News</a>
+        <a href="#news">News</a>
         <a href="#contact">Contact</a>
     </nav>
   <div class="container">
@@ -77,7 +77,7 @@
             <span class="name">Encyclopedia</span>
             <span class="lorem">Lorem ipsum dolor sit amet consectetur.</span>
           </div>
-          <a href="/contact" class="btn-contact">Details</a>
+          <a href="https://www.bhg.com/gardening/plant-dictionary/"  target="_blank" class="btn-contact">Details</a>
         </div>
       </label>
 
@@ -95,7 +95,7 @@
             <span class="name">Solutions</span>
             <span class="lorem">Lorem ipsum dolor sit amet consectetur.</span>
           </div>
-          <a href="/contact" class="btn-contact">Details</a>
+          <a href="solutions.html" class="btn-contact">Details</a>
         </div>
       </label>
 
@@ -110,25 +110,21 @@
             </div>
           </div>
           <div class="infos">
-            <span class="name">Other</span>
+            <span class="name">Plant FAQ</span>
             <span class="lorem">Lorem ipsum dolor sit amet consectetur.</span>
           </div>
-          <a href="/contact" class="btn-contact">Details</a>
+          <a href="plantFAQ.html" class="btn-contact">Details</a>
         </div>
       </label>
     </div>
   </div>
-  <div style="color: aliceblue">Plant FAQ !!</div>
-  <div class="container2">
-    <div class="second">
-      <div class="second-a">Too many Requests</div>
-      <br>
-      <div class="second-b">B</div>
-    </div>
-
-    <div class="first"></div>    
-  </div>
 </body>
-<script src="main.js"></script>
+<script>
+  const radio_btn = document.querySelectorAll('input')
+  let i = 1
+  setInterval(() => {
+    radio_btn[i].checked=true
+    i=(i+1)%radio_btn.length}, 5000);
+</script>
 
 </html>

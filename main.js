@@ -1,11 +1,8 @@
 const URL = "https://perenual.com/api/article-faq-list?key=sk-En9q66c87678a89126594&page=1"
 
-
 const img = document.createElement('img')
 const first = document.querySelector(".first")
-
 const ques = document.querySelector(".second-a")
-
 const ans = document.querySelector(".second-b")
 
 function randomNum(){
@@ -20,17 +17,8 @@ async function makeAPICall() {
     res.json().then(dt => {
         img.src = dt.data[num].default_image.regular_url
         first.appendChild(img)
-        console.log(dt.data[num].default_image.regular_url)
         ques.innerHTML = dt.data[num].question
         ans.innerHTML = dt.data[num].answer
     })
 }
-
 makeAPICall()
-
-
-const radio_btn = document.querySelectorAll('input')
-  let i = 1
-  setInterval(() => {
-    radio_btn[i].checked=true
-    i=(i+1)%radio_btn.length}, 5000);

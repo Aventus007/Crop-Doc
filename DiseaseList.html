@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="DiseaseList.css">
 </head>
 <body>
-    
+    <nav class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <br><br>
+      <div class="cards-wrapper">
+      </div>
 </body>
-<script src="main.js"></script>
+<script>
+const  cardContainer = document.querySelector(".cards-wrapper");
+
+const diseaselist=["Tomato Leaf Mold",
+ "Wheat Septoria",
+ "Tomato Mosaic Virus",
+ "Wheat Stripe Rust",
+ "Tomato Spider Mites",
+ 'Tomato Septoria Leaf Spot',
+ "Tomato Yellow Leaf Curl Virus",
+ "Tomato Target Spot",
+ "Tomato Bacterial Spot",
+ "Rice Brown Spot",
+ "Strawberry Leaf Scorch",
+ "Rice Leaf Smut",
+ "Tomato Late Blight",
+ "Tomato Early Blight",
+ "Rice Bacterial Leaf Blight",
+ "Potato Late Blight",
+ "Grape Leaf Blight(Isariopsis Leaf Spot)",
+ 'Bellpepper Bacterial Spot',
+ "Potato Early Blight",
+ "Orange Haunglongbing",
+ "Peach Bacterial Spot",
+ "Cherry Powdery Mildew",
+ "Grape Blackrot",
+ "Corn(maize) Common rust",
+ "Grape Esca",
+ "Corn(maize) Cercospora Leaf Spot Gray",
+ 'Corn(maize) Northern Leaf Blight',
+ "Apple Cedar Rust",
+ "Apple Blackrot",
+ "Apple Scab"
+]
+
+const createCard = (item , num) => {
+    return `
+    <div class="card-grid-space">
+        <div class="num">${num+1}</div>
+        <a class="card" href="#"
+        style="--bg-img: url('img/leaf-unsplash.jpg'); background-image: var(--bg-img);">
+        <div>
+            <h1>${item}</h1>
+            <p>Learn more about this disease</p>
+            <div class="tags">
+            <div class="tag">More</div>
+            </div>
+            </div>
+        </a>
+    </div>`;
+    };
+
+    diseaselist.forEach((item, index) => {
+        cardContainer.innerHTML += createCard(item ,index);
+    })
+
+</script>
 </html>

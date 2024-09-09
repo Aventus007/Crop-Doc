@@ -20,7 +20,7 @@ input {
 }
 
 input :checked{
-    transition: 5ms;
+    transition: 0.6s;
 }
 
 .topnav {
@@ -51,7 +51,7 @@ input :checked{
     background-color: #04AA6D;
     /* background-color: #fad00c; */
     color: white;
-  }
+}
 
 .container {
     width: 100%;
@@ -63,16 +63,16 @@ input :checked{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 150px;
-    margin-top: 450px;
+    margin-bottom: 75px;
+    /* margin-top: 450px; */
 }
 
 .cards {
-    margin-top: 18px;
+    /* margin-top: 18px; */
     position: relative;
     height: 470px;
     width: 430px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     perspective: 1000px;
     transform-style: preserve-3d;
 }
@@ -231,45 +231,4 @@ input :checked{
     transform: translate3d(-40%, 0, -120px);
     --current-color1: #ECEAED;
     --current-color2: #404457;
-}
-
-.container2{
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
-    /* margin-right: 30px;
-    margin-left: 30px; */
-}
-
-.first{
-    height: 270px;
-    width: 230px;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
-}
-
-.first img{
-    height: 270px;
-    width: 230px;
-}
-
-.second{
-    padding: 20px;
-    padding-left: 50px;
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-}
-
-.second-a{
-    flex: 1;
-    color: rgb(136, 17, 17);
-}
-
-.second-b{
-    flex: 1;
 }
