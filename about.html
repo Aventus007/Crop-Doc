@@ -7,7 +7,6 @@
     <title>CropDoc</title>
     <link rel="shortcut icon" href=".\img\plant-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,6 +17,72 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <h1 style="color: aliceblue;">About Us :</h1>
+    <h1 style="color: aliceblue;" class="heading">About Us :</h1>
+    <p>Using the concept of transfer learning the InceptionV3 model was fine-tuned to achieve 96.18% accuracy in classifying crop diseases into 41 different classes that the model was trained on. The website is designed to be informational and provide treatments to various diseases.
 </body>
+<style>
+    body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.98);
+    overflow-y: scroll;
+    height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+    flex-direction: column;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+input {
+    display: none;
+}
+
+input :checked{
+    transition: 0.6s;
+}
+
+.topnav {
+    position: absolute;
+    top:9px;
+    left:12px;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #000;
+    /* overflow: hidden; */
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 36px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.topnav a.active {
+    background-color: #04AA6D;
+    /* background-color: #fad00c; */
+    color: white;
+}
+
+.heading{
+    margin-top: -350px;
+    margin-left: -1280px;
+}
+
+p{
+    color: white;
+    margin-left: 40px;
+    text-align: left;
+}
+</style>
 </html>
